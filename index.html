@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body class="flex items-center justify-center h-screen bg-black">
+    <div class="bg-white p-8 rounded-lg shadow-lg w-80">
+        <h1 class="text-2xl font-bold mb-4">Stopwatch</h1>
+        
+        <div class="flex items-center justify-center mb-4">
+            <input 
+            name="minutes" 
+            class="w-16 h-12 text-center rounded-md border-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50" 
+            type="number" 
+            min="0" 
+            max="59" 
+            value="0" 
+            required>
+            <span class="mx-2 text-xl">:</span>
+            <input 
+            name="seconds" 
+            class="w-16 h-12 text-center rounded-md border-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50" 
+            type="number" 
+            min="0" 
+            max="59" 
+            value="0" 
+            required>
+        </div>
+        
+        <div class="flex justify-center">
+            <button id="start-button" class="bg-green-500 text-black px-4 py-2 rounded-md mr-2 hover:bg-green-600">Start</button>
+            <button id="stop-button" class="bg-red-500 text-black px-4 py-2 rounded-md hover:bg-red-600">Stop</button>
+        </div>
+    </div>
+   
+    <script src="promise.js"></script>
+</body>
+</html>
